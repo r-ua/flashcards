@@ -13,12 +13,12 @@
       <header class="clearfix">
         <h1>Флэшкарточкер</h1>
           <ul class="navigation-links">
-            <li><%= link_to "Все карточки",      '#', class: 'btn btn-default' %></li>
+            <li><%= link_to 'Все карточки', cards_path, class: 'btn btn-default' %></li>
             <li><%= link_to "Добавить карточку", '#', class: 'btn btn-default' %></li>
           </ul>
       </header>
       <section>      
-      
+       <p style="font-size: 22px;" class="bg-success">Первый в мире удобный менеджер флеш-карточек. Именно так.</p>
         <%= yield %>
         
       </section>

@@ -1,1 +1,18 @@
-<p style="font-size: 22px;" class="bg-success">Первый в мире удобный менеджер флеш-карточек. Именно так.</p>
+<h1>All Cards</h1>
+
+<table class="table">
+ <tr>
+   <th>Original Text</th>
+   <th>Translated Text</th>
+   <th>Date</th>
+ </tr>
+
+ <% @cards.each do |card| %>
+ <tr>
+ 	<th><%= card.original_text %></th>
+ 	<th><%= card.translated_text %></th>
+ 	<th><%= card.review_date %></th>
+ </tr>
+ <% end %>
+
+</table>
