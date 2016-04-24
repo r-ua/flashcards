@@ -5,6 +5,7 @@
    <th>Original Text</th>
    <th>Translated Text</th>
    <th>Date</th>
+   <th colspan="2"></th>
  </tr>
 
  <% @cards.each do |card| %>
@@ -12,6 +13,8 @@
  	<th><%= card.original_text %></th>
  	<th><%= card.translated_text %></th>
  	<th><%= card.review_date %></th>
+ 	<th><%= link_to 'Edit', edit_card_path(card)%></th>
+ 	<th><%= link_to 'Delete', card_path(card), method: :delete, data: { confirm: "Are you sure?" } %></th>
  </tr>
  <% end %>
 
